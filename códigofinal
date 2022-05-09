@@ -1,4 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "coletor.h"
+
+typed struct pessoa {
+    char *nome;
+    int idade;
+    char *endereco;
+}pessoa;
+  
+ void printStruckt(pessoa*);
+ int main(void)
+ {
+  
+     pessoa p1;
+     p1.nome = "Joao";
+     p1.idade = 26;
+     p1.endereco = "Antonio Rolim";
+  
+     printStruct(&p1);
+     return 0;
+ }
+  
+ void printStruct(pessoa *ptr)
+ {
+     printf("Nome da Pessoa = %s\n", ptr->nome);
+     printf("Idade da Pessoa = %d\n, ptr->idade);
+     printf("Endereço da Pessoa = %s\n", ptr->endereco);
 
