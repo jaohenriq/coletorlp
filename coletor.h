@@ -1,18 +1,7 @@
+#define COLETOR
 
-#include <stdio.h>
-#include <stdlib.h>
-#define SIZE_HEAP 100
+void* malloc2(size_t tam);
 
-typedef struct structPoint {
-    int select;
-    struct structPoint *next;
-    int value;
-    
-}   Point;
+void atrib2(int *x, int *y);
 
-typedef struct {
-    Point *heap[SIZE_HEAP];
-    int size_heap;
-}   Heap;
-
-Heap *creatHeap();
+#endif
