@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <coletor.h>
 
 typed struct pessoa {
     char *nome;
